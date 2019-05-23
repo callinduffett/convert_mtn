@@ -1,3 +1,4 @@
+# inports a txt file, converst to a csv file then adds a header row
 import os
 import csv
 import sys
@@ -13,4 +14,3 @@ out_csv.writerows(in_txt)
 with open(csv_file, 'w') as out_csv_head:
     writer = csv.DictWriter(out_csv_head, fieldnames=["time", "surge", "sway", "heave", "roll", "pitch", "yaw"], delimiter=',')
     writer.writeheader()
-
