@@ -1,3 +1,5 @@
+# reads in the .txt file in a given directory, then prints the full
+# path to the file in a csv file so that the list can be used later
 import os
 import csv
 import os.path
